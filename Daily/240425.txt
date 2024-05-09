@@ -1,0 +1,15 @@
+day2
+
+# 배운 내용 :
+SourceTree 사용방법 //CLI와 다르게 협업 과정을 가시적으로 볼 수 있어 유용할 것 같다.
+git 원리
+git으로 협업할 때 어떻게 분업하고 어떻게 병합하는지 //다시 이해할 필요있음.
+git으로 협업할 때 병합과정 중 충돌이 난 문제를 해결하는 방법 (병합중 충돌이 예상될 때 main branch로 병합x)
+git으로 협업할 때 merge를 위한 pull request 방법
+
+push == github repository에 추가
+
+
+# 내 문장 정리 :
+vs code로 작업하고 있는데 git이란 협업시스템을 github를 통해 사용한다. 
+SourceTree라는 GUI프로그램을 사용해서 진행

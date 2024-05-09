@@ -1,0 +1,56 @@
+Git Vocaburary
+
+
+스터디 토큰
+실행중인프로세스강제종료 ctrl c
+복사 ctrl insert
+붙여넣기 shift insert
+
+git init @ 로컬 저장소 생성 (로컬 저장소? 버전 정보와 저장소 주소등이 들어있음.)
+
+git branch -M main @(브랜치 바꾸기)
+
+git remote add origin @복사한 원격 저장소 주소
+
+git config @ 
+git config --global user.email "email@email.com"
+git config -- global user.name "Hardy0070"
+git config - list
+
+애드커밋푸시
+git add 파일명 @ 새로 만들 버전(커밋)에 파일명에 해당하는 파일 추가
+git add . @ 모든 변경 사항 저장
+
+git commit -m @ (-m message의 약자) 레포지토리에 영구적으로 기록하는 행위,버전 별로 최신화
+
+git push -u origin main(브랜치 이름)
+git push -f origin main(브랜치 이름) 강제
+
+git log @ 버전 확인 명령어 (앞7자리 사용) (return 버튼은 q)
+git checkout 앞7자리 @ 원하는 커밋으로 돌아가는 명령어 (git checkout -명령어는 최신으로 돌아감)
+
+git clone 주소 .@ 원격저장소에서 파일 다운(clone으로 로컬repository도 가져옴)
+	git clone 주소@ 원경저장소에서 파일 전체 다운
+
+git pull origin main@ 원격저장소 파일 전체 다운
+
+SourceTree @git을 GUI로 사용할 수 있음
+
+commit 기존 파일과 변경된 파일을 포함한 전체 프로젝트를 저장.
+
+
+
+============================================================================
+240424
+git add . 명령어 입력 중 .앞에 띄어쓰기 누락으로 에러남.
+git push -u origin main 맥북으로 원격저장소 키체인암호 업데이트(push를못하는중)문제 발생
+
+240425
+캠프컴퓨터에서 push한 파일을 맥으로 pull하려고 했음. 
+1.맥 terminal에서 .git파일을 찾을 수 없다고 알림이 뜸. 
+>어리둥절하다 확인해보니 .git폴더가 없는 상위 폴더에서 pull을 명령하고 있었음.
+2.맥에서 pull이 계속 안 돼서 이것저것 찾아보던 중 git restore --staged <파일명>기능을 찾음.
+>git status로 확인해보니 modified 파일이 빨간색 글씨로 변했고 이어서 git restore <파일명>을 명령함.
+>명령 후 git status로 확인해보니 working tree clean이라고 뜸.
+>pull 명령어 정상 작동함.
+>결론 : 깃 작업트리에 파일이 있을 땐(push하지 않은 commit된 파일 등) pull 작동 안 됌. restore필요함.
