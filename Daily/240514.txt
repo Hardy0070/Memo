@@ -1,0 +1,24 @@
+day12
+
+✅ 🛠️ ⭐
+
+1:
+숙제점검:
+
+2:
+스레드:
+ - 작업자는 스레드의 순서만 설정해줄 수 있다 ~
+
+3:
+syncronized - 동기화
+wait(); - 다음 차례 너 대기해
+notify(); - 일시정지
+
+4:
+스레드 안전 종료
+interruptException
+
+5:
+스레드 풀
+ExecutorService
+excuter
