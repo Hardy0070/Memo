@@ -1,0 +1,20 @@
+day13
+
+✅ 🛠️ ⭐
+
+1:
+2:
+forEach
+reduce
+filter
+
+3:
+메소드들
+
+4:
+dinstinct() : 중복 제거. 
+mapToInt, Long, Double : IntStream, LongStream, DoubleStream으로 변환해주는 메소드.
+
+5:
+오늘 stream 복습범위:
+chap23_stream: _04_ 부터 _20_까지
