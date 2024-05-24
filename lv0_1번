@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        String msg = "Spring is beginning" ;
+        int val1 = 3 ;
+        String val2 = "3"; // val2는 Stirng타입이기 때문에 "300"이 아닌 "3"을 입력해야 310이 출력될 수 있다.
+
+        System.out.println(msg);
+        System.out.println(val1 + 10);
+        System.out.println(val2 + "10");
+    }
+}
